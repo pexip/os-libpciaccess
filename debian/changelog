@@ -1,3 +1,9 @@
+libpciaccess (0.12.902-1ubuntu0.2pexip1) pexip; urgency=low
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Tue, 24 Dec 2013 21:55:29 +0000
+
 libpciaccess (0.12.902-1ubuntu0.2) precise-proposed; urgency=low
 
   * Add fix_deletion_of_last_handle.patch: Backport of upstream commit 
