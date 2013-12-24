@@ -1,0 +1,10 @@
+#!/bin/bash -ex
+
+PREFIX=/usr
+export ACLOCAL="aclocal -I ${PREFIX}/share/aclocal -I /usr/share/aclocal"
+export PKG_CONFIG_PATH=${PREFIX}/share/pkgconfig:${PREFIX}/lib/pkgconfig:$PKG_CONFIG_PATH
+
+autoreconf -fvi
+./configure --prefix=${PREFIX}
+make -j2
+#sudo make install
